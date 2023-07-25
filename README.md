@@ -18,7 +18,7 @@ There will be examples of solutions, **I do not recommend using the offered code
 
 ## 8 Kyu
 
-  - ### Heads and Legs | [:arrow_up:UP](#kata)
+  - ### Heads and Legs | 8 kyu | [:arrow_up:UP](#kata)
     ```javascript
     function animals(heads, legs){
       for(var i = 0; i <= heads; i++){
@@ -29,33 +29,97 @@ There will be examples of solutions, **I do not recommend using the offered code
       return 'No solutions';
     }
 
-    console.log(animals(72, 200)) // [44,28]
-    console.log(animals(25, 555)) // "No solutions"
     
     ```
     <br>
     <br>
 
-  - ### Hello, Name or World! | [:arrow_up:UP](#kata)
+  - ### Hello, Name or World! | 8 kyu | [:arrow_up:UP](#kata)
     ```javascript
     
-    function hello(name) {
-      return `Hello, ${name ? name.at(0).toUpperCase() + name?.slice(1).toLowerCase() : 'World'}!`
+    const hello = name => return `Hello, ${name ? name.at(0).toUpperCase() + name?.slice(1).toLowerCase() : 'World'}!`
+    
+    ```
+    <br>
+    <br>
+    
+  - ### A Strange Trip to the Market | 8 kyu | [:arrow_up:UP](#kata)
+    ```javascript
+
+    const isLockNessMonster = s => s.includes('tree fiddy') || s.includes('3.50') || s.includes('three fifty')
+    
+    ```
+    <br>
+    <br>
+    
+  - ### Add new item (collections are passed by reference) | 8 kyu | [:arrow_up:UP](#kata)
+    ```javascript
+
+    const addExtra = listOfNumbers => [...listOfNumbers,'cock']
+    
+    ```
+    <br>
+    <br>
+
+  - ### Exclamation marks series #4: Remove all exclamation marks from sentence but ensure a exclamation mark at the end of string | 8 kyu | [:arrow_up:UP](#kata)
+    ```javascript
+
+    const remove = string => string.replace(/!/g, '') + '!'
+    
+    ```
+    <br>
+    <br>
+
+
+  - ### Exclamation marks series #2: Remove all exclamation marks from the end of sentence | 8 kyu | [:arrow_up:UP](#kata)
+    ```javascript
+
+    const remove = s => s.replace(/!+$/, '');
+    
+    ```
+    <br>
+    <br>
+
+  - ### Grasshopper - Variable Assignment Debug | 8 kyu | [:arrow_up:UP](#kata)
+    ```javascript
+
+    var a = "dev"
+    var b = "Lab"
+    
+    var name = a + b
+    ```
+    <br>
+    <br>
+
+  - ### Return Two Highest Values in List | 8 kyu | [:arrow_up:UP](#kata)
+    ```javascript
+
+    const twoHighest = arr => [...new Set(arr)].sort((a,b) => a-b).slice(-2).reverse()
+    
+    ```
+    <br>
+    <br>
+
+  - ### How old will I be in 2099? | 8 kyu | [:arrow_up:UP](#kata)
+    ```javascript
+
+    const calculateAge = (m, n) => {
+      if(m == n) return 'You were born this very year!';
+    
+      const year = Math.abs(m-n) == 1 ? 'year' : 'years';
+    
+      if(m < n) return "You are "+(n-m)+' '+year+' old.';
+      if(m > n) return "You will be born in "+(-n+m)+' '+year+'.';
     }
-
-    console.log(hello('alice')) // "Hello, Alice!"
-    console.log(hello()) // "Hello World!"
     ```
     <br>
     <br>
-    
-  - ###  | [:arrow_up:UP](#kata)
+
+  - ### Ensure question  | 8 kyu | [:arrow_up:UP](#kata)
     ```javascript
 
+    const ensureQuestion = s => s.endsWith('?') ? s : s + '?'
     
-
-    console.log(()) //
-    console.log(()) //
     ```
     <br>
     <br>
