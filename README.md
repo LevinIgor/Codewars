@@ -1,20 +1,31 @@
-# **Collection of solved tasks from the [codewars](https://www.codewars.com) site**
+# **JavaScript Collection of solved tasks from the [codewars](https://www.codewars.com) site**
+
 
 There will be examples of solutions, **I do not recommend using the offered code to solve your tasks**. I want to warn you that if you try to use the answers shown, you are likely **to be blocked by the site**. The repository was created primarily as a collection of examples for possible study, and help newcomers.
+<br>
+<br>
+
+
+![GitHub commit activity (branch)](https://img.shields.io/github/commit-activity/t/LevinIgor/Codewars)
+![GitHub Repo stars](https://img.shields.io/github/stars/LevinIgor/Codewars)
+![GitHub forks](https://img.shields.io/github/forks/LevinIgor/Codewars)
+![GitHub contributors](https://img.shields.io/github/contributors/LevinIgor/codewars)
+![GitHub closed pull requests](https://img.shields.io/github/issues-pr-closed/LevinIgor/Codewars)
+![GitHub last commit](https://img.shields.io/github/last-commit/LevinIgor/codewars)
+
 
 # **Kata**
 
-  - **[8 kyu](#8-kyu)** <br>
-  - **[7 kyu](#7-kyu)** <br>
-  - **[6 kyu](#6-kyu)** <br>
-  - **[5 kyu](#5-kyu)** <br>
-  - **[4 kyu](#4-kyu)** <br>
-  - **[3 kyu](#3-kyu)** <br>
-  - **[2 kyu](#2-kyu)** <br>
-  - **[1 kyu](#1-kyu)** <br> 
-  <br>
-  <br>
-  <br>
+  - **[8 - kyu](#8-kyu)** <br>
+  - **[7 - kyu](#7-kyu)** <br>
+  - **[6 - kyu](#6-kyu)** <br>
+  - **[5 - kyu](#5-kyu)** <br>
+  - **[4 - kyu](#4-kyu)** <br>
+  - **[3 - kyu](#3-kyu)** <br>
+  - **[2 - kyu](#2-kyu)** <br>
+  - **[1 - kyu](#1-kyu)** <br> 
+<br>
+
 
 ## 8 Kyu
 
@@ -120,6 +131,31 @@ There will be examples of solutions, **I do not recommend using the offered code
 
     const ensureQuestion = s => s.endsWith('?') ? s : s + '?'
     
+    ```
+    <br>
+    <br>
+
+  - ### Total pressure calculation  | 8 kyu | [:arrow_up:UP](#kata)
+    ```javascript
+
+    function solution(M1, M2, m1, m2, V, T) {
+    		M1 = m1 * 0.001/M1;
+        M2 = m2 * 0.001/M2;
+        T = T + 273.15;
+    	  const R = 0.082;
+    
+    	  return (((M1 + M2) * R * T) / V) * 1000;
+    }
+    
+    ```
+    <br>
+    <br>
+
+  - ### Enumerable Magic #1 - True for All? | 8 kyu | [:arrow_up:UP](#kata)
+    ```javascript
+
+    const all = ( arr, fun ) => arr.every(fun)
+
     ```
     <br>
     <br>
