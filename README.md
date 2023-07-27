@@ -159,6 +159,33 @@ There will be examples of solutions, **I do not recommend using the offered code
     ```
     <br>
     <br>
+
+  - ### Parse float | 8 kyu | [:arrow_up:UP](#kata)
+    ```javascript
+
+    const parseF = s =>  isNaN(parseFloat(s)) ? null : parseFloat(s)
+
+    ```
+    <br>
+    <br>
+
+  - ### SpeedCode #2 - Array Madness | 8 kyu | [:arrow_up:UP](#kata)
+    ```javascript
+
+    const arrayMadness = (a, b) => a.reduce((acc, x) => acc + x**2, 0) > b.reduce((acc, x) => acc + x**3, 0) 
+
+    ```
+    <br>
+    <br>
+
+  - ### easy logs | 8 kyu | [:arrow_up:UP](#kata)
+    ```javascript
+
+    const logs = (x , a, b) =>  (Math.log(a*b) / Math.log(x))
+
+    ```
+    <br>
+    <br>
 ## 7 Kyu
 ## 6 Kyu
 ## 5 Kyu
