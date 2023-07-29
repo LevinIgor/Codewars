@@ -186,6 +186,94 @@ There will be examples of solutions, **I do not recommend using the offered code
     ```
     <br>
     <br>
+
+  - ### Classy Classes | 8 kyu | [:arrow_up:UP](#kata)
+    ```javascript
+
+    class Person {
+
+      constructor(name, age) {
+        this.name = name;
+        this.age = age;
+      }
+      
+      get info() {
+        return `${this.name}s age is ${this.age}`;
+      }
+    }
+    ```
+    <br>
+    <br>
+
+  - ### Pole Vault Starting Marks | 8 kyu | [:arrow_up:UP](#kata)
+    ```javascript
+
+    const startingMark = bodyHeight => +(bodyHeight * 3.9354 + 3.4681).toFixed(2);
+
+    ```
+    <br>
+    <br>
+
+  - ### Training JS #6: Basic data types--Boolean and conditional statements if..else | 8 kyu | [:arrow_up:UP](#kata)
+    ```javascript
+
+    const trueOrFalse =(val) => Boolean(val).toString()
+
+    ```
+    <br>
+    <br>
+    
+  - ### Fuel Calculator: Total Cost | 8 kyu | [:arrow_up:UP](#kata)
+    ```javascript
+
+    function fuelPrice(litres, pricePerLiter) {
+      var discount = Math.min(Math.floor(litres/2) * 0.05, 0.25);
+      var price = litres * (pricePerLiter - discount);
+      return Math.round(price*100) / 100;
+    }
+
+    ```
+    <br>
+    <br>
+
+  - ### Days in the year | 8 kyu | [:arrow_up:UP](#kata)
+    ```javascript
+
+    const yearDays = year => `${year} has 36${6 - !!(year % 400 && !(year % 100) || year % 4)} days`;
+
+    ```
+    <br>
+    <br>
+    
+  - ### Arguments to Binary addition | 8 kyu | [:arrow_up:UP](#kata)
+    ```javascript
+
+    const arr2bin = arr => arr.filter(x => typeof x == 'number').reduce((x, y) => x + y, 0).toString(2);
+
+    ```
+    <br>
+    <br>
+    
+  - ### Training JS #34: methods of Math---pow() sqrt() and cbrt() | 8 kyu | [:arrow_up:UP](#kata)
+    ```javascript
+
+    function cutCube(volume,n){
+      return !(Math.cbrt(n) % 1) && !(Math.cbrt(volume / n) % 1);
+    }
+
+    ```
+    <br>
+    <br>
+    
+  - ### Training JS #17: Methods of String object--indexOf(), lastIndexOf() and search() | 8 kyu | [:arrow_up:UP](#kata)
+    ```javascript
+
+    const firstToLast = (str,c) => (str.indexOf(c) < 0) ? -1 : str.lastIndexOf(c) - str.indexOf(c)
+
+    ```
+    <br>
+    <br>
+    
 ## 7 Kyu
 ## 6 Kyu
 ## 5 Kyu
