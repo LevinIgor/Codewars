@@ -274,6 +274,49 @@ There will be examples of solutions, **I do not recommend using the offered code
     <br>
     <br>
     
+  - ### Implement Array.prototype.filter() | 8 kyu | [:arrow_up:UP](#kata)
+    ```javascript
+
+    Array.prototype.filter = function (func) {
+      const result = []
+      this.forEach(el => func(el) ? result.push(el) : null)      
+      return result
+    }
+
+    ```
+    <br>
+    <br>
+    
+  - ### Job Matching #1 | 8 kyu | [:arrow_up:UP](#kata)
+    ```javascript
+
+    function match(candidate, job) {
+        if(!candidate.minSalary || !job.maxSalary) throw "Error!!";
+        return (candidate.minSalary * 0.9) <= job.maxSalary;
+    }
+
+    ```
+    <br>
+    <br>
+    
+  - ### Lexical this | 8 kyu | [:arrow_up:UP](#kata)
+    ```javascript
+
+     var Person = function(){
+        var person = {
+          _name: "Leroy",
+          _friends: [],
+          fillFriends(f){
+            this._friends.push(...f);
+          }
+        }
+        return person;
+    }
+
+    ```
+    <br>
+    <br>
+    
 ## 7 Kyu
 ## 6 Kyu
 ## 5 Kyu
