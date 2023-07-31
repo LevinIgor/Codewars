@@ -318,6 +318,61 @@ There will be examples of solutions, **I do not recommend using the offered code
     <br>
     
 ## 7 Kyu
+
+  - ### ASCII letters from Number | 8 kyu | [:arrow_up:UP](#kata)
+    ```javascript
+
+    function convert(number){
+      const arr = []
+      
+      for(let i = 0; i < number.length; i+=2){
+        arr.push(String.fromCharCode(number.substr(i,2)))
+      }
+      
+      return arr.join('')
+     }
+
+    ```
+    <br>
+    <br>
+    
+  - ### Find the next perfect square! | 8 kyu | [:arrow_up:UP](#kata)
+    ```javascript
+
+    function findNextSquare(sq) {
+      return Math.sqrt(sq)%1? -1 : Math.pow(Math.sqrt(sq)+1,2);
+    }
+
+    ```
+    <br>
+    <br>
+    
+  - ### Ones and Zeros | 8 kyu | [:arrow_up:UP](#kata)
+    ```javascript
+
+    const binaryArrayToNumber = arr => {
+      return parseInt(arr.join(""), 2)
+    };
+
+    ```
+    <br>
+    <br>
+    
+  - ### Sum of the first nth term of Series | 8 kyu | [:arrow_up:UP](#kata)
+    ```javascript
+
+    function SeriesSum(n) {
+      var sum = 0;
+      for(var i = 0; i < n; i++) {
+        sum += 1 / (3 * i + 1);
+      }
+      return sum.toFixed(2);
+    }
+
+    ```
+    <br>
+    <br>
+    
 ## 6 Kyu
 ## 5 Kyu
 ## 4 Kyu
