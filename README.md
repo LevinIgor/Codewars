@@ -319,7 +319,7 @@ There will be examples of solutions, **I do not recommend using the offered code
     
 ## 7 Kyu
 
-  - ### ASCII letters from Number | 8 kyu | [:arrow_up:UP](#kata)
+  - ### ASCII letters from Number | 7 kyu | [:arrow_up:UP](#kata)
     ```javascript
 
     function convert(number){
@@ -336,7 +336,7 @@ There will be examples of solutions, **I do not recommend using the offered code
     <br>
     <br>
     
-  - ### Find the next perfect square! | 8 kyu | [:arrow_up:UP](#kata)
+  - ### Find the next perfect square! | 7 kyu | [:arrow_up:UP](#kata)
     ```javascript
 
     function findNextSquare(sq) {
@@ -347,7 +347,7 @@ There will be examples of solutions, **I do not recommend using the offered code
     <br>
     <br>
     
-  - ### Ones and Zeros | 8 kyu | [:arrow_up:UP](#kata)
+  - ### Ones and Zeros | 7 kyu | [:arrow_up:UP](#kata)
     ```javascript
 
     const binaryArrayToNumber = arr => {
@@ -358,7 +358,7 @@ There will be examples of solutions, **I do not recommend using the offered code
     <br>
     <br>
     
-  - ### Sum of the first nth term of Series | 8 kyu | [:arrow_up:UP](#kata)
+  - ### Sum of the first nth term of Series | 7 kyu | [:arrow_up:UP](#kata)
     ```javascript
 
     function SeriesSum(n) {
@@ -368,6 +368,39 @@ There will be examples of solutions, **I do not recommend using the offered code
       }
       return sum.toFixed(2);
     }
+
+    ```
+    <br>
+    <br>
+    
+  - ### Sort array by string length | 7 kyu | [:arrow_up:UP](#kata)
+    ```javascript
+
+     let sortByLength = arr => arr.sort((a,b) => a.length - b.length);
+
+    ```
+    <br>
+    <br>
+    
+  - ### Find the middle element | 7 kyu | [:arrow_up:UP](#kata)
+    ```javascript
+
+     const gimme = function (arr) {
+        return arr.indexOf([...arr].sort((x, y) => x > y)[1]);
+     };
+
+
+    ```
+    <br>
+    <br>
+    
+  - ### Round up to the next multiple of 5 | 7 kyu | [:arrow_up:UP](#kata)
+    ```javascript
+
+     function roundToNext5(n){
+        return Math.ceil(n/5)*5;
+      }
+
 
     ```
     <br>
