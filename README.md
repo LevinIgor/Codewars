@@ -406,6 +406,61 @@ There will be examples of solutions, **I do not recommend using the offered code
     <br>
     <br>
     
+  - ### Simple Fun #176: Reverse Letter | 7 kyu | [:arrow_up:UP](#kata)
+    ```javascript
+
+     function reverseLetter(str) {
+        return str.replace(/[^a-z]/gi,'').split('').reverse().join('')  
+    }
+
+
+    ```
+    <br>
+    <br>
+    
+  - ### Summing a number's digits | 7 kyu | [:arrow_up:UP](#kata)
+    ```javascript
+
+    function sumDigits(number) {
+      return `${Math.abs(number)}`.split('').reduce((acc,el) => acc + +el,0)
+    }
+
+
+    ```
+    <br>
+    <br>
+    
+  - ### Check the exam | 7 kyu | [:arrow_up:UP](#kata)
+    ```javascript
+
+    function checkExam(array1, array2) {
+      let result = 0;
+      
+      for(let i in array1){
+        if(array2[i] === '') continue;
+        array1[i] === array2[i] ? result+=4 : result-=1;
+      }
+      
+      return Math.max(result,0)
+    }
+
+
+    ```
+    <br>
+    <br>
+    
+  - ### Fix string case | 7 kyu | [:arrow_up:UP](#kata)
+    ```javascript
+
+    function solve(s){
+        return s.match(/[a-z]/g).length >= s.length / 2 ? s.toLowerCase() : s.toUpperCase()
+    }
+
+
+    ```
+    <br>
+    <br>
+    
 ## 6 Kyu
 ## 5 Kyu
 ## 4 Kyu
