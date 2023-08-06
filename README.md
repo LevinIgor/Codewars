@@ -461,6 +461,55 @@ There will be examples of solutions, **I do not recommend using the offered code
     <br>
     <br>
     
+  - ### Triangular Treasure | 7 kyu | [:arrow_up:UP](#kata)
+    ```javascript
+
+    function triangular( n ) {
+      return n > 0 ? n * (n + 1) / 2 : 0;
+    }
+
+
+    ```
+    <br>
+    <br>
+    
+  - ### Most digits | 7 kyu | [:arrow_up:UP](#kata)
+    ```javascript
+
+    const findLongest = l => l.reduce((a, b) => (`${b}`.length > `${a}`.length) ? b : a);
+
+
+    ```
+    <br>
+    <br>
+    
+  - ### Reverse a Number 7 kyu | [:arrow_up:UP](#kata)
+    ```javascript
+
+    const reverseNumber = n => (n > 0 ? 1 : -1) * Math.abs(n).toString().split('').reverse().join('')
+
+
+    ```
+    <br>
+    <br>
+    
+  - ### Minimize Sum Of Array (Array Series #1) | [:arrow_up:UP](#kata)
+    ```javascript
+
+    function minSum(arr) {
+      const l = arr.length;
+      const sorted = arr.sort((a, b) => b - a);
+      const max = sorted.slice(0, l/2);
+      const min = sorted.slice(l/2, l).reverse();
+      
+      return max.reduce((sum, el, i) => sum + el * min[i], 0);
+    }
+
+
+    ```
+    <br>
+    <br>
+    
 ## 6 Kyu
 ## 5 Kyu
 ## 4 Kyu
