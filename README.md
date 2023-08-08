@@ -510,6 +510,139 @@ There will be examples of solutions, **I do not recommend using the offered code
     <br>
     <br>
     
+  - ### Moves in squared strings (I) | [:arrow_up:UP](#kata)
+    ```javascript
+
+    const vertMirror = s => s.map(s => [...s].reverse().join(''));
+    const horMirror = s => s.reverse();
+    
+    const oper = (fct, s) => fct(s.split("\n")).join("\n");
+
+    ```
+    <br>
+    <br>
+
+  - ### All unique | [:arrow_up:UP](#kata)
+    ```javascript
+
+    let hasUniqueChars = (str) => new Set(str).size === str.length;
+
+    ```
+    <br>
+    <br>
+    
+  - ### Palindrome chain length | [:arrow_up:UP](#kata)
+    ```javascript
+
+    const palindromeChainLength = n => {
+      let count = 0;
+    
+      while(+[...`${n}`].reverse().join('') !== n){
+        n+= +[...`${n}`].reverse().join('')
+        count++;
+      }
+      
+      return count
+    };
+
+    ```
+    <br>
+    <br>
+    
+  - ### Speed Control | [:arrow_up:UP](#kata)
+    ```javascript
+
+    const gps = (s, x) => {
+
+      if (x.length<=1) {
+        return 0;
+      }
+      
+      let output = [];
+      for (let i = 0; i < x.length-1; i++) { 
+        output.push((x[i+1]-x[i])*3600/s);
+      }
+      
+      return Math.max(...output);
+    }
+
+    ```
+    <br>
+    <br>
+    
+  - ### Coding Meetup #2 - Higher-Order Functions Series - Greet developers | [:arrow_up:UP](#kata)
+    ```javascript
+
+     const greetDevelopers = list => list.map(dev => ({...dev, greeting: `Hi ${dev.firstName}, what do you like the most about ${dev.language}?`}));
+
+    ```
+    <br>
+    <br>
+    
+  - ### Halving Sum | [:arrow_up:UP](#kata)
+    ```javascript
+
+     const halvingSum = n => n > 1 ? n + halvingSum(n / 2 | 0) : n
+
+    ```
+    <br>
+    <br>
+    
+  - ### max diff - easy | [:arrow_up:UP](#kata)
+    ```javascript
+
+     function maxDiff(list) {
+        return list.length ? Math.max(...list) - Math.min(...list) : 0;
+      };
+
+    ```
+    <br>
+    <br>
+    
+  - ### Over The Road | [:globe_with_meridians:Source](https://www.codewars.com/kata/5f0ed36164f2bc00283aed07/javascript)  | [:arrow_up:UP](#kata)
+    ```javascript
+
+     function maxDiff(list) {
+        return list.length ? Math.max(...list) - Math.min(...list) : 0;
+      };
+
+    ```
+    <br>
+    <br>
+    
+  - ### Simple beads count | [:globe_with_meridians:Source](https://www.codewars.com/kata/58712dfa5c538b6fc7000569/javascript)  | [:arrow_up:UP](#kata)
+    ```javascript
+
+     function countRedBeads(n) {
+        return n < 2 ? 0 : 2 * n - 2;
+     }
+
+    ```
+    <br>
+    <br>
+    
+  - ### Boiled Eggs | [:globe_with_meridians:Source](https://www.codewars.com/kata/52b5247074ea613a09000164/javascript)  | [:arrow_up:UP](#kata)
+    ```javascript
+
+    function cookingTime(eggs) {
+      return 5 * Math.ceil(eggs / 8);
+    }
+
+    ```
+    <br>
+    <br>
+    
+  - ### Simple remove duplicates | [:globe_with_meridians:Source](https://www.codewars.com/kata/5ba38ba180824a86850000f7/javascript)  | [:arrow_up:UP](#kata)
+    ```javascript
+
+     function solve(arr){
+        return arr.filter((val,i) => arr.lastIndexOf(val) == i);
+    }
+
+    ```
+    <br>
+    <br>
+    
 ## 6 Kyu
 ## 5 Kyu
 ## 4 Kyu
