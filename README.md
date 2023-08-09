@@ -592,8 +592,8 @@ There will be examples of solutions, **I do not recommend using the offered code
     ```javascript
 
      function maxDiff(list) {
-        return list.length ? Math.max(...list) - Math.min(...list) : 0;
-      };
+       return list.length ? Math.max(...list) - Math.min(...list) : 0;
+     };
 
     ```
     <br>
@@ -603,8 +603,8 @@ There will be examples of solutions, **I do not recommend using the offered code
     ```javascript
 
      function maxDiff(list) {
-        return list.length ? Math.max(...list) - Math.min(...list) : 0;
-      };
+       return list.length ? Math.max(...list) - Math.min(...list) : 0;
+     };
 
     ```
     <br>
@@ -614,7 +614,7 @@ There will be examples of solutions, **I do not recommend using the offered code
     ```javascript
 
      function countRedBeads(n) {
-        return n < 2 ? 0 : 2 * n - 2;
+       return n < 2 ? 0 : 2 * n - 2;
      }
 
     ```
@@ -636,7 +636,68 @@ There will be examples of solutions, **I do not recommend using the offered code
     ```javascript
 
      function solve(arr){
-        return arr.filter((val,i) => arr.lastIndexOf(val) == i);
+       return arr.filter((val,i) => arr.lastIndexOf(val) == i);
+     }
+
+    ```
+    <br>
+    <br>
+    
+  - ### Find the nth Digit of a Number | [:globe_with_meridians:Source](https://www.codewars.com/kata/577b9960df78c19bca00007e/javascript)  | [:arrow_up:UP](#kata)
+    ```javascript
+
+    var findDigit = function(num, nth){
+      if(nth <= 0) return -1
+      num = `${Math.abs(num)}`
+      
+      return num.length >= nth ? +num.at(num.length - nth) : 0
+    }
+
+    ```
+    <br>
+    <br>
+    
+  - ### esreveR | [:globe_with_meridians:Source](https://www.codewars.com/kata/5413759479ba273f8100003d/javascript)  | [:arrow_up:UP](#kata)
+    ```javascript
+
+     reverse = function(array) {
+       return array.map((c, i) => array[array.length - 1 - i]);
+     }
+
+    ```
+    <br>
+    <br>
+    
+  - ### Sum of array singles | [:globe_with_meridians:Source](https://www.codewars.com/kata/59f11118a5e129e591000134/javascript)  | [:arrow_up:UP](#kata)
+    ```javascript
+
+     function repeats(arr){
+       return arr.reduce((acc,el) => arr.indexOf(el) === arr.lastIndexOf(el) ? acc+=el : acc,0)
+     };
+
+    ```
+    <br>
+    <br>
+    
+  - ### Gauß needs help! (Sums of a lot of numbers). | [:globe_with_meridians:Source](https://www.codewars.com/kata/54df2067ecaa226eca000229/javascript)  | [:arrow_up:UP](#kata)
+    ```javascript
+
+     function f(n){
+       if(typeof n !== 'number' || !Number.isInteger(n) || n <= 0) return false
+       return ((1 + n)*n)/2
+     };
+
+    ```
+    <br>
+    <br>
+    
+  - ### Alphabetical Addition | [:globe_with_meridians:Source](https://www.codewars.com/kata/5d50e3914861a500121e1958/javascript)  | [:arrow_up:UP](#kata)
+    ```javascript
+
+    function addLetters(...letters) {
+      const alpha = 'zabcdefghijklmnopqrstuvwxy';
+      const sum = letters.reduce((sum, letter) => sum + alpha.indexOf(letter), 0) % 26;
+      return alpha[sum];
     }
 
     ```
