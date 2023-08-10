@@ -704,6 +704,95 @@ There will be examples of solutions, **I do not recommend using the offered code
     <br>
     <br>
     
+  - ### Filter the number | [:globe_with_meridians:Source](https://www.codewars.com/kata/55b051fac50a3292a9000025/javascript)  | [:arrow_up:UP](#kata)
+    ```javascript
+
+    const FilterString = value => +value.replace(/\D/g, '');
+
+    ```
+    <br>
+    <br>
+    
+  - ### Simple Fun #74: Growing Plant | [:globe_with_meridians:Source](https://www.codewars.com/kata/58941fec8afa3618c9000184/javascript)  | [:arrow_up:UP](#kata)
+    ```javascript
+
+    function growingPlant(upSpeed, downSpeed, desiredHeight) {
+      let count = 0, height = 0;
+      while(true){
+        count++;
+        height+=upSpeed;
+        if(height >= desiredHeight) return count;
+        height-=downSpeed;
+      }
+    }
+
+    ```
+    <br>
+    <br>
+    
+  - ### Coloured Triangles | [:globe_with_meridians:Source](codewars.com/kata/5a25ac6ac5e284cfbe000111/javascript)  | [:arrow_up:UP](#kata)
+    ```javascript
+
+    function triangle(row) {
+      let result = ''
+      if(row.length == 1) result = row;
+      
+      for(let i = 0; i < row.length - 1; i++){
+        if(row[i] === row[i+1]) result+= row[i]
+        else result+= 'RGB'.replace(row[i],'').replace(row[i+1],'')
+      }
+      
+      if(row.length > 1) return triangle(result)
+      else return result
+    }
+
+    ```
+    <br>
+    <br>
+    
+  - ### Strong Number (Special Numbers Series #2) | [:globe_with_meridians:Source](https://www.codewars.com/kata/5a4d303f880385399b000001/javascript)  | [:arrow_up:UP](#kata)
+    ```javascript
+
+    function strong(n) {
+      return [1,2,145,40585].includes(n) ? 'STRONG!!!!' : 'Not Strong !!'
+    }
+
+    ```
+    <br>
+    <br>
+    
+  - ### Help the Fruit Guy | [:globe_with_meridians:Source](https://www.codewars.com/kata/557af4c6169ac832300000ba/javascript)  | [:arrow_up:UP](#kata)
+    ```javascript
+
+    function removeRotten(arr){
+      return arr ? arr.map(x=>x.replace('rotten', '').toLowerCase()) : [] ;
+    }
+
+    ```
+    <br>
+    <br>
+    
+  - ### Currying functions: multiply all elements in an array | [:globe_with_meridians:Source](https://www.codewars.com/kata/586909e4c66d18dd1800009b/javascript)  | [:arrow_up:UP](#kata)
+    ```javascript
+
+    const multiplyAll = arr => n => arr.map(x => n * x);
+
+    ```
+    <br>
+    <br>
+    
+  - ### Alternate case | [:globe_with_meridians:Source](https://www.codewars.com/kata/57a62154cf1fa5b25200031e/javascript)  | [:arrow_up:UP](#kata)
+    ```javascript
+
+    function alternateCase(s) {
+      return [...s].map(el => el === el.toLowerCase() ? el.toUpperCase() : el.toLowerCase()).join('')
+    }
+
+
+    ```
+    <br>
+    <br>
+    
 ## 6 Kyu
 ## 5 Kyu
 ## 4 Kyu
