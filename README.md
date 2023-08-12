@@ -793,6 +793,149 @@ There will be examples of solutions, **I do not recommend using the offered code
     <br>
     <br>
     
+  - ### Basic Calculator | [:globe_with_meridians:Source](https://www.codewars.com/kata/5296455e4fe0cdf2e000059f/javascript)  | [:arrow_up:UP](#kata)
+    ```javascript
+
+    function calculate(num1, operation, num2) {
+      var ops = {
+        '+': function(x, y) { return x + y; },
+        '-': function(x, y) { return x - y; },
+        '*': function(x, y) { return x * y; },
+        '/': function(x, y) { return y === 0 ? null : x / y; }
+      };
+      return (ops[operation] || function() { return null; })(num1, num2);
+    }
+
+
+    ```
+    <br>
+    <br>
+    
+  - ### Disarium Number (Special Numbers Series #3) | [:globe_with_meridians:Source](https://www.codewars.com/kata/5a53a17bfd56cb9c14000003/javascript)  | [:arrow_up:UP](#kata)
+    ```javascript
+
+    function disariumNumber(n){
+      return [...`${n}`].reduce((acc,el,i) => acc+=el**(i+1),0) === n ? 'Disarium !!' : 'Not !!'
+    }
+
+    ```
+    <br>
+    <br>
+    
+  - ### Building blocks | [:globe_with_meridians:Source](https://www.codewars.com/kata/55b75fcf67e558d3750000a3/javascript)  | [:arrow_up:UP](#kata)
+    ```javascript
+
+    class Block{
+
+      constructor(data){
+        [this.width, this.length, this.height] = data;
+      }
+      
+      getWidth() {
+        return this.width;
+      }
+      
+      getLength() {
+        return this.length;
+      }
+      
+      getHeight() {
+        return this.height;
+      }
+      
+      getVolume() {
+        return this.width * this.length * this.height;
+      }
+      
+      getSurfaceArea () {
+        return 2 * (this.width * this.length + this.width * this.height + this.length * this.height);
+      }
+    }
+
+    ```
+    <br>
+    <br>
+    
+  - ### SevenAte9 | [:globe_with_meridians:Source](https://www.codewars.com/kata/559f44187fa851efad000087/javascript)  | [:arrow_up:UP](#kata)
+    ```javascript
+
+    function sevenAte9(str){
+      return str.replace(/79(?=7)/g, '7');
+    }
+
+    ```
+    <br>
+    <br>
+    
+  - ### Difference Of Squares | [:globe_with_meridians:Source](https://www.codewars.com/kata/558f9f51e85b46e9fa000025/javascript)  | [:arrow_up:UP](#kata)
+    ```javascript
+
+    function differenceOfSquares(n){
+      const arr = Array.from({length:n}, (_,i) => i+1)
+      return arr.reduce((acc,el) => acc+el,0)**2 - arr.reduce((acc,el) => acc+=el**2,0)
+    }
+
+    ```
+    <br>
+    <br>
+    
+  - ### Digital cypher | [:globe_with_meridians:Source](https://www.codewars.com/kata/592e830e043b99888600002d/javascript)  | [:arrow_up:UP](#kata)
+    ```javascript
+
+    function encode(str,  n){
+      return  [...str].map((el,i) => (el.charCodeAt() - 96) + +`${n}`.at(i%`${n}`.length))
+    }
+
+    ```
+    <br>
+    <br>
+    
+  - ### Return the closest number multiple of 10 | [:globe_with_meridians:Source](https://www.codewars.com/kata/58249d08b81f70a2fc0001a4/javascript)  | [:arrow_up:UP](#kata)
+    ```javascript
+
+    const closestMultiple10 = num => Math.round(num / 10) * 10;
+    
+
+    ```
+    <br>
+    <br>
+    
+  - ### Substituting Variables Into Strings: Padded Numbers | [:globe_with_meridians:Source](https://www.codewars.com/kata/51c89385ee245d7ddf000001/javascript)  | [:arrow_up:UP](#kata)
+    ```javascript
+
+    function solution(value){
+      return "Value is " + ("00000" + value).slice(-5);
+    }
+    
+
+    ```
+    <br>
+    <br>
+    
+  - ### The old switcheroo | [:globe_with_meridians:Source](https://www.codewars.com/kata/55d410c492e6ed767000004f/javascript)  | [:arrow_up:UP](#kata)
+    ```javascript
+
+    function vowel2index(str) {
+       return str.replace(/[aeiou]/ig, (m, i) => i + 1);
+    }
+    
+
+    ```
+    <br>
+    <br>
+    
+  - ### Word values | [:globe_with_meridians:Source](https://www.codewars.com/kata/598d91785d4ce3ec4f000018/javascript)  | [:arrow_up:UP](#kata)
+    ```javascript
+
+    function wordValue(a) {
+      return a.map((el,i) => el.replace(/ /g, '').split('').reduce((acc,letter) => acc+letter.charCodeAt() - 96,0) * (i+1))
+    }
+    
+
+    ```
+    <br>
+    <br>
+    
 ## 6 Kyu
 ## 5 Kyu
 ## 4 Kyu
