@@ -936,6 +936,34 @@ There will be examples of solutions, **I do not recommend using the offered code
     <br>
     <br>
     
+  - ### Convert a linked list to a string | [:globe_with_meridians:Source](https://www.codewars.com/kata/582c297e56373f0426000098/javascript)  | [:arrow_up:UP](#kata)
+    ```javascript
+
+  	function stringify(list) {
+		  return list === null ? "null" : `${list.data} -> ${stringify(list.next)}`; 
+		}
+    
+
+    ```
+    <br>
+    <br>
+    
+  - ### ToLeetSpeak | [:globe_with_meridians:Source](https://www.codewars.com/kata/57c1ab3949324c321600013f/javascript)  | [:arrow_up:UP](#kata)
+    ```javascript
+
+  	const toLeetSpeak = s => s.replace(/[ABCEGHILOSTZ]/g, c => D[c]);
+
+		const D = {
+		  A: '@', B: '8', C: '(', E: '3',
+		  G: '6', H: '#', I: '!', L: '1',
+		  O: '0', S: '$', T: '7', Z: '2'
+		};
+    
+
+    ```
+    <br>
+    <br>
+    
 ## 6 Kyu
 ## 5 Kyu
 ## 4 Kyu
