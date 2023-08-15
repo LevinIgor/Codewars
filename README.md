@@ -2,6 +2,9 @@
 
 
 There will be examples of solutions, **I do not recommend using the offered code to solve your tasks**. I want to warn you that if you try to use the answers shown, you are likely **to be blocked by the site**. The repository was created primarily as a collection of examples for possible study, and help newcomers.
+
+
+![](https://www.codewars.com/users/3au4onok/badges/small)
 <br>
 <br>
 
@@ -928,7 +931,7 @@ There will be examples of solutions, **I do not recommend using the offered code
     ```javascript
 
     function wordValue(a) {
-      return a.map((el,i) => el.replace(/ /g, '').split('').reduce((acc,letter) => acc+letter.charCodeAt() - 96,0) * (i+1))
+    	return a.map((el,i) => el.replace(/ /g, '').split('').reduce((acc,letter) => acc+letter.charCodeAt() - 96,0) * (i+1))
     }
     
 
@@ -940,8 +943,8 @@ There will be examples of solutions, **I do not recommend using the offered code
     ```javascript
 
   	function stringify(list) {
-		  return list === null ? "null" : `${list.data} -> ${stringify(list.next)}`; 
-		}
+		return list === null ? "null" : `${list.data} -> ${stringify(list.next)}`; 
+	}
     
 
     ```
@@ -951,15 +954,101 @@ There will be examples of solutions, **I do not recommend using the offered code
   - ### ToLeetSpeak | [:globe_with_meridians:Source](https://www.codewars.com/kata/57c1ab3949324c321600013f/javascript)  | [:arrow_up:UP](#kata)
     ```javascript
 
-  	const toLeetSpeak = s => s.replace(/[ABCEGHILOSTZ]/g, c => D[c]);
+  	const toLeetSpeak = s => s.replace(/[ABCEGHILOSTZ]/g, c => D[c]);   
 
-		const D = {
-		  A: '@', B: '8', C: '(', E: '3',
-		  G: '6', H: '#', I: '!', L: '1',
-		  O: '0', S: '$', T: '7', Z: '2'
-		};
+    ```
+    <br>
+    <br>
+    
+  - ### Split In Parts | [:globe_with_meridians:Source](https://www.codewars.com/kata/5650ab06d11d675371000003/javascript)  | [:arrow_up:UP](#kata)
+    ```javascript
+
+  	var splitInParts = function(s, partLength){
+	  let result = []
+	  
+	  for(let i = 0; i < s.length; i+=partLength){
+	    result.push(s.substr(i,partLength))
+	  }
+	  
+	  return result.join(' ')
+	}		
     
 
+    ```
+    <br>
+    <br>
+    
+  - ### Valid Spacing | [:globe_with_meridians:Source](https://www.codewars.com/kata/5f77d62851f6bc0033616bd8/javascript)  | [:arrow_up:UP](#kata)
+    ```javascript
+
+  	function validSpacing(s) {
+	  return s.trim() == s && !s.includes("  ");
+	}
+
+    ```
+    <br>
+    <br>
+    
+  - ### Count all the sheep on farm in the heights of New Zealand | [:globe_with_meridians:Source](https://www.codewars.com/kata/58e0f0bf92d04ccf0a000010/javascript)  | [:arrow_up:UP](#kata)
+    ```javascript
+
+  	const lostSheep = (f,s,n) => n - [...f,...s].reduce((a,b) => a + b,0)
+    
+    ```
+    <br>
+    <br>
+    
+  - ### Insert dashes | [:globe_with_meridians:Source](https://www.codewars.com/kata/55960bbb182094bc4800007b/javascript)  | [:arrow_up:UP](#kata)
+    ```javascript
+
+  	function insertDash(num) {
+	  let result = ''
+	  num = `${num}`
+	  for(let i = 0; i < num.length; i++){
+	    if(num[i]&1 && num[i+1]&1) result+=`${num[i]}-`
+	    else result+=num[i]
+	  }
+	  
+	  return result
+	}
+    
+    ```
+    <br>
+    <br>
+    
+  - ### Band name generator | [:globe_with_meridians:Source](https://www.codewars.com/kata/59727ff285281a44e3000011/javascript)  | [:arrow_up:UP](#kata)
+    ```javascript
+
+  	function bandNameGenerator(str) {
+	  return str.at(0) !== str.at(-1) ? `The ${str.at(0).toUpperCase() + str.slice(1)}` : `${str.charAt(0).toUpperCase() + str.slice(1) + str.slice(1)}`
+	}
+    
+    ```
+    <br>
+    <br>
+    
+  - ### Arithmetic progression | [:globe_with_meridians:Source](https://www.codewars.com/kata/55caf1fd8063ddfa8e000018/javascript)  | [:arrow_up:UP](#kata)
+    ```javascript
+
+  	function arithmeticSequenceElements(a, r, n) {
+	  return Array.from({length: n}, (_, i) => a + r * i).join(', ');
+	}
+
+    
+    ```
+    <br>
+    <br>
+    
+  - ### Stanton measure | [:globe_with_meridians:Source](https://www.codewars.com/kata/59a1cdde9f922b83ee00003b/javascript)  | [:arrow_up:UP](#kata)
+    ```javascript
+
+  	function stantonMeasure(arr) {
+	  const count = n => arr.filter(x => x === n).length;
+	  return count(count(1));
+	}
+
+
+    
     ```
     <br>
     <br>
