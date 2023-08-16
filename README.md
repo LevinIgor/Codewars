@@ -1034,7 +1034,6 @@ There will be examples of solutions, **I do not recommend using the offered code
 	  return Array.from({length: n}, (_, i) => a + r * i).join(', ');
 	}
 
-    
     ```
     <br>
     <br>
@@ -1047,8 +1046,28 @@ There will be examples of solutions, **I do not recommend using the offered code
 	  return count(count(1));
 	}
 
-
+    ```
+    <br>
+    <br>
     
+  - ### Length and two values. | [:globe_with_meridians:Source](https://www.codewars.com/kata/62a611067274990047f431a8/javascript)  | [:arrow_up:UP](#kata)
+    ```javascript
+
+	function alternate(n, firstValue, secondValue){
+	  return Array.from({length:n}, (_,i) => i&1 ?  secondValue : firstValue)
+	}
+
+    ```
+    <br>
+    <br>
+    
+  - ### makeBackronym | [:globe_with_meridians:Source](https://www.codewars.com/kata/55805ab490c73741b7000064/javascript)  | [:arrow_up:UP](#kata)
+    ```javascript
+
+	var makeBackronym = function(string){
+	  return [...string].map(el => dict[el.toUpperCase()]).join(' ');
+	};
+
     ```
     <br>
     <br>
