@@ -1072,6 +1072,17 @@ There will be examples of solutions, **I do not recommend using the offered code
     <br>
     <br>
     
+  - ### Frequency sequence | [:globe_with_meridians:Source](https://www.codewars.com/kata/585a033e3a36cdc50a00011c/javascript)  | [:arrow_up:UP](#kata)
+    ```javascript
+
+	function freqSeq(str, sep) {
+	  return [...str].map(el => str.replace(new RegExp(`[^${el}]`,'g'),'').length).join(sep)
+	}
+
+    ```
+    <br>
+    <br>
+    
 ## 6 Kyu
 ## 5 Kyu
 ## 4 Kyu
