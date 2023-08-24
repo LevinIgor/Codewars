@@ -1083,6 +1083,15 @@ There will be examples of solutions, **I do not recommend using the offered code
     <br>
     <br>
     
+  - ### Find Duplicates | [:globe_with_meridians:Source](https://www.codewars.com/kata/5558cc216a7a231ac9000022/javascript)  | [:arrow_up:UP](#kata)
+    ```javascript
+
+	const duplicates = arr => [...new Set(arr.filter((el, i) => i !== arr.indexOf(el)))];
+
+    ```
+    <br>
+    <br>
+    
 ## 6 Kyu
 ## 5 Kyu
 ## 4 Kyu
