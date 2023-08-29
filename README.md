@@ -1092,6 +1092,33 @@ There will be examples of solutions, **I do not recommend using the offered code
     <br>
     <br>
     
+  - ### TV Remote | [:globe_with_meridians:Source](https://www.codewars.com/kata/5a5032f4fd56cb958e00007a/javascript)  | [:arrow_up:UP](#kata)
+    ```javascript
+
+	const tvRemote = function(word) {
+  
+	  let keys = 'abcde123fghij456klmno789pqrst.@0uvwxyz_/';
+	  let pos = [ 0, 0 ];
+	  let res = 0;
+	  
+	  for (let char of word) {
+	
+	    let i = keys.indexOf(char);
+	    let dest  = [ i / 8 | 0, i % 8 ];
+	
+	    res += Math.abs(dest[0] - pos[0]) + Math.abs(dest[1] - pos[1]) + 1;
+	    pos = dest;
+	    
+	  }
+	
+	  return res;
+	
+	}
+
+    ```
+    <br>
+    <br>
+    
 ## 6 Kyu
 ## 5 Kyu
 ## 4 Kyu
