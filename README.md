@@ -1119,6 +1119,19 @@ There will be examples of solutions, **I do not recommend using the offered code
     <br>
     <br>
     
+  - ### Delta Bits | [:globe_with_meridians:Source](https://www.codewars.com/kata/538948d4daea7dc4d200023f/javascript)  | [:arrow_up:UP](#kata)
+    ```javascript
+
+	function convertBits(a, b){
+	  var x = a ^ b, count = 0;
+	  do { count += x & 1 } while (x >>= 1);
+	  return count;
+	}
+
+    ```
+    <br>
+    <br>
+    
 ## 6 Kyu
 ## 5 Kyu
 ## 4 Kyu
