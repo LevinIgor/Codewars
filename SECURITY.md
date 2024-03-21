@@ -1,0 +1,4 @@
+# Security Policy
+
+## All good
+
