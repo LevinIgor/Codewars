@@ -1172,6 +1172,44 @@ There will be examples of solutions, **I do not recommend using the offered code
     ```
     <br>
     <br>
+
+
+- ### Arc Length | [:globe_with_meridians:Source](https://www.codewars.com/kata/5307ce667da4f26b1600080d/javascript)  | [:arrow_up:UP](#kata)
+    
+    ```javascript
+
+	function distance([x1, y1], [x2, y2]) {
+	    return Math.hypot(x1 - x2, y1 - y2);
+	}
+	
+	function linspace(start, stop, length) {
+	    const step = (stop - start) / (length - 1);
+	    return Array.from({length: length}, (_, i) => start + step * i);
+	}
+	
+	function arcLen(fn, range, intervals = 200) {
+	    const coords = linspace(...range, intervals).map(fn);
+	    const lengths = Array.from({length: intervals - 1}, (_, i) => distance(coords[i], coords[i + 1]));
+	    return parseFloat(lengths.reduce((a, b) => a + b).toFixed(2));
+	}
+
+    ```
+
+    ``` javascript
+	function arcLen(fn, [b, e]) {
+	  const n = 100000;
+	  let res = 0;
+	  for (let i = 0, pp; i < n; i++) {
+	    const p = fn(b * i / n + e * (n - i) / n);
+	    if (i != 0)
+	      res += Math.hypot(p[0] - pp[0], p[1] - pp[1]);
+	    pp = p;
+	  }
+	  return res;
+	}
+    ```
+    <br>
+    <br>
     
 ## 5 Kyu
 ## 4 Kyu
