@@ -1211,6 +1211,20 @@ There will be examples of solutions, **I do not recommend using the offered code
     <br>
     <br>
     
+- ### Quantum Bogosort | [:globe_with_meridians:Source](https://www.codewars.com/kata/53165ceea8fbdb4e0c00015b/javascript)  | [:arrow_up:UP](#kata)
+    
+    ```javascript
+
+	Array.prototype.qbsort = function() {
+	  this.qshuffle()  
+	  this.some((_,i,a) => i && a[i]<a[i-1] ) && QSC.destroyUniverse();
+	}
+
+    ```
+
+    <br>
+    <br>
+    
 ## 5 Kyu
 ## 4 Kyu
 ## 3 Kyu
