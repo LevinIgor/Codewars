@@ -1133,6 +1133,46 @@ There will be examples of solutions, **I do not recommend using the offered code
     <br>
     
 ## 6 Kyu
+  - ### Random Sequence Generator | [:globe_with_meridians:Source](https://www.codewars.com/kata/5302b069ad5217ce2d0000f1/javascript)  | [:arrow_up:UP](#kata)
+    
+    ```javascript
+
+	function Randomizer(min, max) {
+	  for (this.num = []; min <= max; min++) this.num.push(min)
+	  for (var i = 10; i--;) this.num.sort(function() { return Math.random() - 0.5 })
+	}
+	
+	Randomizer.prototype.next = function() {
+	  if (!this.num.length) throw new Error('No more numbers')
+		return this.num.pop()
+	}
+	
+	Randomizer.prototype.sequence = function(size) {
+	  if (size > this.num.length || !this.num.length) throw new Error('Too many numbers')
+		return this.num.splice(0, size || Infinity);
+	}
+
+    ```
+
+    ``` javascript
+	function Randomizer(min, max) {
+	  this.numbers = [...'0'.repeat(max-min+1)].map((_, i) => min + i);
+	  this.numbers.sort((a, b) => Math.random() - 0.5);
+	}
+	
+	Randomizer.prototype.next = function() {
+	  if (this.numbers.length === 0) throw new Error('No more numbers');
+	  return this.numbers.pop();
+	};
+	
+	Randomizer.prototype.sequence = function(size = this.numbers.length) {
+	  if (size > this.numbers.length) throw new Error('Too many numbers');
+	  return this.numbers.splice(0, size);
+	};
+    ```
+    <br>
+    <br>
+    
 ## 5 Kyu
 ## 4 Kyu
 ## 3 Kyu
